@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Registro de Productos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="contenedor">
+    <h1>📦 Registro de Productos</h1>
+
+    <form id="formProducto">
+      <input type="text" id="nombre" placeholder="Nombre del producto" required>
+      <input type="number" id="precio" placeholder="Precio" step="0.01" required>
+      <input type="number" id="cantidad" placeholder="Cantidad" required>
+      <button type="submit">Agregar</button>
+    </form>
+
+    <h2>Productos registrados</h2>
+    <table id="tablaProductos">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Precio</th>
+          <th>Cantidad</th>
+          <th>Acción</th>
+        </tr>
+      </thead>
+      <tbody id="cuerpoTabla">
+        <!-- Aquí se insertan los productos dinámicamente -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
